@@ -244,46 +244,44 @@ header .ham-burger.active span:nth-child(2) {
 	display: flex;
 }
 
+/* Update the styling for the About section boxes */
 .about .content .box {
-	flex: 0 0 33.33%;
-	max-width: 33.33%;
-	padding: 15px;
-}
-
-.about .content .box .inner {
-	background-color: #222222;
-}
-
-.about .content .box:nth-child(2) .inner {
-	background-color: #d44713;
-}
-
-.about .content .box .inner .img img {
+	flex: 1;
+	margin: 0 10px;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about .content .inner {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+  }
+  
+  .about .content .box .inner .img img {
 	width: 100%;
-}
-
-.about .content .box .inner .text {
-	padding: 30px;
-}
-
-.about .content .box .inner .text h4 {
-	font-size: 20px;
-	margin: 0;
-	padding: 0px 0px 15px;
-	font-weight: 500;
-	color: #ffffff;
-	text-transform: capitalize;
-	text-align: center;
-}
-
-.about .content .box .inner .text p {
-	font-size: 15px;
-	line-height: 20px;
-	color: #ffffff;
-	text-align: center;
-	margin: 0;
-	font-family: 'Open Sans', sans-serif;
-}
+	height: auto; /* Ensure the image does not stretch */
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+  }
+  
+  .about .content .box .inner .text {
+	padding: 20px;
+	background-color: #fff;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+  }
+  
+  /* Optional: Add some spacing between boxes */
+  .about .content .box:first-child {
+	margin-left: 0;
+  }
+  
+  .about .content .box:last-child {
+	margin-right: 0;
+  }
+  
 
 
 /*Service Section*/
@@ -696,3 +694,5 @@ header .ham-burger.active span:nth-child(2) {
   .btnn:hover {
 	background-color: #9e594c;
   }
+
+  
