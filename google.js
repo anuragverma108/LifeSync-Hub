@@ -16,8 +16,8 @@ auth.languageCode = 'en'
 const provider= new GoogleAuthProvider();
 
 
-const googleLogin= document.getElementById("btnn");
-googleLogin.addEventListener("click",function(){
+const googleLogin1= document.getElementById("btnn");
+googleLogin1.addEventListener("click",function(){
   signInWithPopup(auth, provider)
   .then((result) => {
     const credential = GoogleAuthProvider.credentialFromResult(result);
@@ -29,6 +29,21 @@ googleLogin.addEventListener("click",function(){
     const errorMessage = error.message;
   });
 })
+
+const googleLogin2= document.getElementById("patient");
+googleLogin2.addEventListener("click",function(){
+  signInWithPopup(auth, provider)
+  .then((result) => {
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const user = result.user;
+    console.log(user);
+    window.location.href="./index.html";
+  }).catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
+})
+
 
 function updateUserProfile(user){
 const userName= user.displayName;
