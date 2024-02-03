@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: url('images/home.jpg') center center fixed;
-    background-size: cover;
+    background-image: url("../Images/about1.jpg");
+    background-size:cover;
 }
 
 .container {
@@ -95,8 +95,8 @@ header .nav ul li a:hover::before {
 } */
 
 .department-box:hover {
-    border-color: #ffffff;
-    box-shadow: 0 0 20px rgba(212, 71, 19, 0.3);
+    border-color: blue;
+    box-shadow: 10px 10px 20px rgba(8, 58, 239, 0.3);
 }
 
 .department-box h2 {
