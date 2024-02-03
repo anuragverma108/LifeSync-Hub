@@ -6,6 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+	
 }
 
 * {
@@ -694,5 +695,3 @@ header .ham-burger.active span:nth-child(2) {
   .btnn:hover {
 	background-color: #9e594c;
   }
-
-  
