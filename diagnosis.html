@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Disease Selector</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="symptom-selector">
+            <h2>Select Your Symptoms</h2>
+            <ul class="symptom-list">
+                <li><input type="checkbox" name="symptom" value="fever">Fever</li>
+                <li><input type="checkbox" name="symptom" value="cough">Cough</li>
+                <li><input type="checkbox" name="symptom" value="headache">Headache</li>
+                <li><input type="checkbox" name="symptom" value="sneezing">Sneezing</li>
+                <li><input type="checkbox" name="symptom" value="itchy_eyes">Itchy Eyes</li>
+                <li><input type="checkbox" name="symptom" value="runny_nose">Runny Nose</li>
+                <li><input type="checkbox" name="symptom" value="severe_headache">Severe Headache</li>
+                <li><input type="checkbox" name="symptom" value="nausea">Nausea</li>
+                <li><input type="checkbox" name="symptom" value="light_sensitivity">Sensitivity to Light</li>
+                
+            </ul>
+            <button id="detect-btn">Detect Disease</button>
+        </div>
+        <div id="result-container">
+            <h2>You May Have...</h2>
+            <ul id="disease-list"></ul>
+        </div>
+    </div>
+    <nav>
+        <div class="left"><a style="text-decoration: none;"href="index.html">Home</a></div>
+    </nav>
+    <footer>
+        <div class="notice">
+            <p>Disclaimer: The information provided here may not be accurate. Do consult a doctor before proceeding further.</p>
+        </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+
+</body>
+
+</html>
