@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+    background-color: #000000;
+    padding: 15px 15px;
+}
+
+header .logo a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+header .logo a span {
+    color: #ee4609;
+}
+
+header .nav ul li a.active::before,
+header .nav ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: #000000;
+    opacity: .2;
+    transition: width .5s ease;
+    z-index: -1;
+}
+
+header .nav ul li a:hover::before {
+    width: 100%;
+}
+
+section {
+    margin-top: 40px;
+}
+/* Style for the Upload Medical Documents Section and Uploaded Document Section */
+.medical-history {
+    width: 65%; /* Set width to 65% for both sections */
+    margin: 20px auto; /* Center the sections with auto margin */
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+ /* Orange border */
+    border-radius: 10px; /* Border radius of 10 pixels */
+    padding: 20px; /* Optional padding for content */
+  }
+  
+  
+  
+  /* Style for form groups (label + input/button) */
+  .form-group {
+    margin-bottom: 15px; /* Optional margin between form groups */
+  }
+  
+  /* Style for labels within form groups */
+  .form-group label {
+    display: block; /* Make labels block elements for proper spacing */
+    margin-bottom: 5px; /* Optional margin between label and input */
+  }
+  
+ 
+  
+  /* Style for the submit button */
+  button[type="submit"] {
+    background-color:  #F6450A; /* Orange background color for the button */
+    color: #fff; /* White text color for the button */
+    padding: 10px 20px; /* Optional padding for the button */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Border radius for the button */
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+
+  #upload-documents:hover {
+    border: 2px solid #F6450A;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ee701d; /* Change background color on hover to orange */
+
+  }
+  /* Hover effect for Uploaded Document Section */
+.medical-history:hover {
+    border: 2px solid #F6450A;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ee701d;
+    
+  }
+
+
+
+@media (max-width: 768px) {
+    .plan-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medical History</title>
+    <link rel="stylesheet" type="text/css" href="css/style4.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body style="background-image: url(backl.jpg);  background-size: cover;
+background-repeat: no-repeat;">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">LifeSync <b style="color:#aa390f;">Hub</b></a>
+                <b>All Medical Departments</b>
+            </div>
+            <a href="javascript:void(0)" class="ham-burger">
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+  <!-- Upload Medical Documents Section -->
+  <section id="upload-documents" class="medical-history">
+    <h2>Upload Medical Documents</h2>
+    <br><br>
+    <form id="documentUploadForm" onsubmit="uploadFile(); return false;">
+      <div class="form-group">
+        <label for="fileInput">Choose File:</label>
+        <input type="file" id="fileInput" accept=".pdf" />
+      </div>
+      <div class="form-group">
+        <button type="submit">Upload Document</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Display Uploaded Documents Section -->
+  <section id="display-documents" class="medical-history">
+    <h2>Uploaded Documents</h2>
+    <br>
+    <ul id="documentList"></ul>
+  </section>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-storage.js"></script>
+  <script src="script_docu.js"></script>
+
+</body>
+
+</html>

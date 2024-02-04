@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disease Detection Chatbot</title>
+    <link rel="stylesheet" href="ML.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,11 +25,14 @@
     </style>
 </head>
 <body>
-
+    <div class="bigboy">
+        <div class="smallboy">
     <div id="chatbox"></div>
     <div id="inputBox">
-        <input type="text" id="userInput" placeholder="Type your symptoms...">
+        <input type="text" id="userInput" placeholder="Type your symptoms..." style="border-radius: 5px;">
         <button onclick="sendMessage()">Send</button>
+    </div>
+    </div>
     </div>
 
     <script src="ML.js"></script>
