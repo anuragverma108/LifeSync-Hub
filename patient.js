@@ -35,6 +35,6 @@ import { getAuth,onAuthStateChanged } from "https://www.gstatic.com/firebasejs/1
     else
     {
         alert("Create Account and Login");
-        window.location.href="./Landing Page.html";
+        window.location.href="./landingPage.html";
     }
   });
