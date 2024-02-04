@@ -117,10 +117,22 @@ font-size: 26px;
     padding: 30px;
     border-radius: 15px;
     backdrop-filter: blur(5px);
-    
+    padding-top: 10px;
 }
 
 #chatbox{
     background-color: #fff;
     border-radius: 15px;
+}
+.text{
+   padding: 5px; 
+   margin: 0px;
+   padding-top: 10px;
+   color: #c9302c;
+}
+.x{
+    padding: 5px; 
+   margin: 0px;
+    margin-bottom: 10px;
+    font-weight: lighter;
 }
