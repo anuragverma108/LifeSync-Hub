@@ -134,6 +134,17 @@ font-size: 26px;
 }
 
 .btnnnn a{
+    text-decoration: none;
+    color: #fff;
+}
+.btnnnp{
+    width: 200px;
+    height: 20px;
+    color: #d9534f;
+    margin-left: 220px;
+}
+
+.btnnnnp a{
      text-decoration: none;
      color: #fff;
 }
