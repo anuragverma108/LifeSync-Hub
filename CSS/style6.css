@@ -127,6 +127,9 @@ section {
     margin-bottom: 0px;
     padding: 0px;
 }
+.blog-section{
+    margin-top: 0px;
+}
 
 .blog-content h3{
     padding-right: 100px;
