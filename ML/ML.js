@@ -58,10 +58,12 @@ const diseaseData = [
     { symptoms: ['cough','sneezing'], disease: 'Common Cold' },
     { symptoms: ['high fever','sneezing'], disease: 'Common Cold' },
     { symptoms: ['headache','sneezing'], disease: 'Common Cold' },
+    {symptoms: ['red eyes','sneezing'], disease: 'Common Cold' },
+    {symptoms: ['itchy eyes','sneezing'], disease: 'Common Cold' },
     { symptoms: ['indigestion','headache'], disease: 'Migrane' },
-
-    
-    
+    { symptoms: ['back pain','leg pain'], disease: 'Spondolities' },
+    { symptoms: ['leg pain'], disease: 'Arthirities' },
+    { symptoms: ['back pain'], disease: 'Spondolities' },
     // Add more symptom-disease mappings as needed
 ];
 
