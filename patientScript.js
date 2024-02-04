@@ -1,6 +1,4 @@
-// patientView.js
-
-// Initialize Firebase (replace with your Firebase project config)
+// Replace with your Firebase project configuration
 const firebaseConfig = {
     apiKey: "AIzaSyB4Qc2jo5iAOEkQE7_8ZCjNMohUSsW-wkg",
     authDomain: "lifesync-hub-c2e7a.firebaseapp.com",
@@ -12,49 +10,26 @@ const firebaseConfig = {
     measurementId: "G-2FHJ730MV3"
 };
 
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-const database = firebase.database();
-const patientListContainer = document.getElementById('patientList');
-const countdownElement = document.getElementById('countdown');
+const appointmentForm = document.getElementById("appointmentForm");
 
-// Fetch and display upcoming appointments
-function fetchAppointments() {
-    const appointmentsRef = database.ref('appointments');
+appointmentForm.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-    appointmentsRef.on('value', (snapshot) => {
-        const appointments = snapshot.val();
-        patientListContainer.innerHTML = '';
+    const patientName = document.getElementById("patientName").value;
+    const appointmentDate = document.getElementById("appointmentDate").value;
 
-        if (appointments) {
-            const sortedAppointments = Object.values(appointments).sort(
-                (a, b) => new Date(a.appointmentDate) - new Date(b.appointmentDate)
-            );
+    if (patientName.trim() !== "" && appointmentDate.trim() !== "") {
+        const appointmentsRef = firebase.database().ref("appointments");
+        appointmentsRef.push({
+            patientName: patientName,
+            appointmentDate: appointmentDate
+        });
 
-
-            sortedAppointments.forEach((appointment) => {
-                const appointmentDetails = `
-            <div>
-                <h3>${appointment.patientName}</h3>
-                <p>Appointment Date: ${appointment.appointmentDate}</p>
-            </div>
-        `;
-                patientListContainer.innerHTML += appointmentDetails;
-            });
-
-            // Update the timer with the time difference between the current time and the next appointment
-            const currentTime = new Date();
-            const nextAppointmentTime = new Date(sortedAppointments[0].appointmentDate);
-            const timeDifferenceInSeconds = Math.floor((nextAppointmentTime - currentTime) / 1000);
-
-            // Call startCountdown with the formatted time
-            startCountdown(timeDifferenceInSeconds);
-        } else {
-            patientListContainer.innerHTML = '<p>No upcoming appointments.</p>';
-            countdownElement.textContent = 'N/A';
-        }
-    });
-}
-
-// You can customize and expand the functionality as needed.
-fetchAppointments();
+        // Clear form fields
+        document.getElementById("patientName").value = "";
+        document.getElementById("appointmentDate").value = "";
+    }
+});
