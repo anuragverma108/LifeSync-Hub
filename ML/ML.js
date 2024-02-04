@@ -1,6 +1,6 @@
 const chatbox = document.getElementById('chatbox');
 const userInput = document.getElementById('userInput');
-
+//getting values from json
 const diseaseData = [
     { symptoms: ['fever', 'headache'], disease: 'Flu' },
     { symptoms: ['cough', 'shortness of breath'], disease: 'COVID-19' },
@@ -54,6 +54,7 @@ const diseaseData = [
     { symptoms: ['cough','high fever','headache','sneezing'], disease: 'Common Cold' },
     { symptoms: ['high fever','headache','sneezing'], disease: 'Common Cold' },
     { symptoms: ['cough','headache','sneezing'], disease: 'Common Cold' },
+    { symptoms: ['cough','headache'], disease: 'Common Cold' },
     { symptoms: ['cough','high fever','sneezing'], disease: 'Common Cold' },
     { symptoms: ['cough','sneezing'], disease: 'Common Cold' },
     { symptoms: ['high fever','sneezing'], disease: 'Common Cold' },
