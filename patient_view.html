@@ -3,22 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Appointment</title>
+    <title>Patient View</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="timer.js" defer></script>
+    <script src="patientScript.js" defer></script>
     <link rel="stylesheet" href="patient.css">
 </head>
 <body>
-    <div class="bigboy">
-    <div class="smallboy">
-    <div id="app">
-        <h2>Your Appointment</h2>
-        <p>Patient Name: <span id="patientName"></span></p>
-        <p>Appointment Date: <span id="appointmentDate"></span></p>
-        <p>Estimated Wait Time: <span id="estimatedWaitTime">Calculating...</span> minutes</p>
-    </div>
-    </div>
-    </div>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
-    <script src="patientViewScript.js"></script>
+    <h1>Patient View</h1>
+    <div id="patientList"></div>
+    <div id="timer">Expected Wait Time: <span id="countdown">420</span> hours remaining for your turn</div>
 </body>
 </html>
