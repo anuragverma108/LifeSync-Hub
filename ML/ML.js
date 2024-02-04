@@ -18,8 +18,7 @@ const diseaseData = [
     { symptoms: ['itching', 'vomitting'], disease: 'Chronic cholestasis' },
     { symptoms: ['itching'], disease: 'Chronic cholestasis' },
     { symptoms: ['itching', 'skin rash','stomach ache'], disease: 'Drug Reaction' },
-    { symptoms: ['itching','stomach ache'], disease: 'Drug Reaction' },
-    { symptoms: ['skin rash','stomach ache'], disease: 'Drug Reaction' },
+    { symptoms: ['itching', 'skin rash','stomach ache'], disease: 'Drug Reaction' },
     { symptoms: ['vomitting'], disease: 'Peptic Ulcer Disease' },
     { symptoms: ['vomitting','indigestion'], disease: 'Peptic Ulcer Disease' },
     { symptoms: ['indigestion'], disease: 'Peptic Ulcer Disease' },
@@ -28,6 +27,7 @@ const diseaseData = [
     { symptoms: ['weight loss','lethargy'], disease: 'Diabetes' },
     { symptoms: ['weight loss','restlessness'], disease: 'Diabetes' },
     { symptoms: ['restlessness','lethargy'], disease: 'Diabetes' },
+<<<<<<< HEAD
     { symptoms: ['vomitting','sunken eyes','dehydration','diarrhoea'], disease: 'Gastroenteritis' },
     { symptoms: ['sunken eyes','dehydration','diarrhoea'], disease: 'Gastroenteritis' },
     { symptoms: ['vomitting','dehydration','diarrhoea'], disease: 'Gastroenteritis' },
@@ -60,6 +60,8 @@ const diseaseData = [
     { symptoms: ['headache','sneezing'], disease: 'Common Cold' },
     { symptoms: ['indigestion','headache'], disease: 'Migrane' },
 
+=======
+>>>>>>> parent of 0c12784 (Merge branch 'main' of https://github.com/Dibyendu-kyo/LifeSync-Hub)
     
     
     // Add more symptom-disease mappings as needed
@@ -95,7 +97,7 @@ function detectDisease(userSymptoms) {
     }
 
     // Return a default message if no matching disease is found
-    return 'any disease but we currently do not have enough information. Consult a healthcare professional for accurate diagnosis.';
+    return 'Any disease but we currently do not have enough information. Consult a healthcare professional for accurate diagnosis.';
 }
 
 function appendMessage(sender, message) {
