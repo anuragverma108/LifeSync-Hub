@@ -35,8 +35,8 @@ function fetchAppointments() {
             sortedAppointments.forEach((appointment) => {
                 const appointmentDetails = `
             <div>
-                <h3>${appointment.patientName}</h3>
-                <p>Appointment Date: ${appointment.appointmentDate}</p>
+                <h3 style="color: yellow;">${appointment.patientName}</h3>
+                <p><span style="font-weight:bold;">Appointment Date:</span> ${appointment.appointmentDate}</p>
             </div>
         `;
                 patientListContainer.innerHTML += appointmentDetails;

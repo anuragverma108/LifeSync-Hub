@@ -112,8 +112,10 @@ font-size: 26px;
     left: 26%;
     background-color: rgba(0, 0, 0, 0.39);
     padding: 30px;
+    padding-top: 10px;
     border-radius: 15px;
     backdrop-filter: blur(5px);
+    color: #fff;
 }
 .bigboy{
     position: relative;
@@ -123,4 +125,14 @@ font-size: 26px;
     display: flex;
     flex-direction:column;
     justify-content: center;
+    color: #fff;
+}
+
+.text{
+    padding-bottom: 5px;
+    border-bottom:2px solid black ;
+}
+
+.founder{
+    font-weight: bold;
 }
