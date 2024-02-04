@@ -1,0 +1,132 @@
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    background-image: url("https://singularityhub.com/wp-content/uploads/2019/02/doctor-robot-modern-future-health-artificial-intelligence-shutterstock-1072509989-1068x601.jpg");
+	background-size:cover;
+}
+
+#app {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #f6450a;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #f6450a;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+span {
+    flex-grow: 1;
+}
+
+button.remove-btn {
+    background-color: #d9534f;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+button.remove-btn:hover {
+    background-color: #c9302c;
+}
+img{
+    border-radius: 50%;
+   width: 50px;
+   height: 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some spacing between logo and name */
+}
+
+.logo-container h1 {
+    margin: 0; /* Remove default margin */
+}
+.h2{
+    color: #fff;
+}
+
+.log{
+margin-right: 5px;    
+font-size: 26px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#userName{
+    color: #f6450a;
+}
+    
+.bigboy{
+    position: relative;
+    height: auto;
+    width: 60%;
+    background-color: black;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.smallboy{
+    position: absolute;
+    left: 26%;
+    background-color: rgba(0, 0, 0, 0.361);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    
+}
+
+#chatbox{
+    background-color: #fff;
+    border-radius: 15px;
+}
