@@ -32,17 +32,15 @@ The HealthTracker web application is designed to streamline the appointment sche
 
 - **Frontend:**
   - HTML5, CSS3, JavaScript
-  - React.js for a dynamic and responsive user interface
 
 - **Backend:**
-  - Node.js with Express for server-side development
-  - MongoDB for database management
+  - Firebase
 
 - **Machine Learning:**
-  - Integration of a machine learning model (e.g., TensorFlow, scikit-learn) for disease prediction based on symptoms
+  - Integration of a machine learning model  for disease prediction based on symptoms
 
 - **Authentication:**
-  - JWT (JSON Web Tokens) for secure user authentication and authorization
+  - Firebase
 
 ## Contributing
 
