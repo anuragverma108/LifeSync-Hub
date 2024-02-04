@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ideal Nutrition & Exercises</title>
+    <link rel="stylesheet" type="text/css" href="css/style5.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">LifeSync <b style="color:#aa390f;">Hub</b></a>
+            
+            </div>
+            <a href="javascript:void(0)" class="ham-burger">
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="ratings">
+        <div class="container">
+            <h1 class="text">Doctor Ratings and Reviews</h1>
+            <br>
+            <br>
+            
+
+            <!-- Add a form for submitting reviews -->
+            <form id="reviewForm">
+                <label for="doctorName" class="text">Doctor's Name:</label>
+                <input type="text" id="doctorName" name="doctorName" required>
+
+                <label for="rating" class="text">Rating (Out of 5):</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+                <label for="review" class="text">Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+
+            <!-- Display existing reviews here -->
+            <div class="reviews">
+                <!-- Sample review card, you can dynamically generate these based on data -->
+                <div class="review-card">
+                    <h3>John Doe</h3>
+                    <p class="rating">Rating: 4</p>
+                    <p class="user-review">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at quam eget
+                        felis vestibulum maximus.</p>
+                </div>
+
+                <!-- Add more review cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Include your footer content here if needed -->
+    </footer>
+
+    <script src="google.js" defer type="module"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script1.js"></script>
+    <script></script>
+
+    <script>
+    // script.js
+
+$(document).ready(function() {
+    // Function to handle form submission
+    $('#reviewForm').submit(function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get form data
+        var doctorName = $('#doctorName').val();
+        var rating = $('#rating').val();
+        var review = $('#review').val();
+
+        // Create a new review card HTML with line break
+        var reviewCard = '<div class="review-card">' +
+                            '<h3>' + doctorName + '</h3>' +
+                            '<p class="rating">Rating: ' + rating + '</p>' +
+                            '<p class="user-review">' + review + '</p>' +
+                         '</div><br>';
+
+        // Append the new review card to the reviews section
+        $('.reviews').append(reviewCard);
+
+        // Clear form fields after submission
+        $('#doctorName').val('');
+        $('#rating').val('');
+        $('#review').val('');
+    });
+});
+
+
+    </script>
+</body>
+
+</html>

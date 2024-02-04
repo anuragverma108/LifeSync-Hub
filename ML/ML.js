@@ -1,6 +1,6 @@
 const chatbox = document.getElementById('chatbox');
 const userInput = document.getElementById('userInput');
-
+//getting values from json
 const diseaseData = [
     { symptoms: ['fever', 'headache'], disease: 'Flu' },
     { symptoms: ['cough', 'shortness of breath'], disease: 'COVID-19' },
@@ -27,7 +27,6 @@ const diseaseData = [
     { symptoms: ['weight loss','lethargy'], disease: 'Diabetes' },
     { symptoms: ['weight loss','restlessness'], disease: 'Diabetes' },
     { symptoms: ['restlessness','lethargy'], disease: 'Diabetes' },
-<<<<<<< HEAD
     { symptoms: ['vomitting','sunken eyes','dehydration','diarrhoea'], disease: 'Gastroenteritis' },
     { symptoms: ['sunken eyes','dehydration','diarrhoea'], disease: 'Gastroenteritis' },
     { symptoms: ['vomitting','dehydration','diarrhoea'], disease: 'Gastroenteritis' },
@@ -41,6 +40,7 @@ const diseaseData = [
     { symptoms: ['cough','breathlessness'], disease: 'Bronchial Asthma' },
     { symptoms: ['cough','high fever','breathlessness'], disease: 'Bronchial Asthma' },
     { symptoms: ['chest pain','headache'], disease: 'Hypertension' },
+    { symptoms: ['high fever','headache'], disease: 'Common Cold' },
     { symptoms: ['headache'], disease: 'Hypertension' },
     { symptoms: ['vomitting','headache'], disease: 'Stomach Infection' },
     { symptoms: ['vomitting'], disease: 'Stomach Infection' },
@@ -50,20 +50,18 @@ const diseaseData = [
     { symptoms: ['high fever','headache','chest pain'], disease: 'Common Cold' },
     { symptoms: ['cough','high fever'], disease: 'Common Cold' },
     { symptoms: ['headache','chest pain'], disease: 'Common Cold' },
-    { symptoms: ['high fever','headache'], disease: 'Common Cold' },
     { symptoms: ['cough','high fever','headache','sneezing'], disease: 'Common Cold' },
     { symptoms: ['high fever','headache','sneezing'], disease: 'Common Cold' },
     { symptoms: ['cough','headache','sneezing'], disease: 'Common Cold' },
+    { symptoms: ['cough','headache'], disease: 'Common Cold' },
     { symptoms: ['cough','high fever','sneezing'], disease: 'Common Cold' },
     { symptoms: ['cough','sneezing'], disease: 'Common Cold' },
     { symptoms: ['high fever','sneezing'], disease: 'Common Cold' },
     { symptoms: ['headache','sneezing'], disease: 'Common Cold' },
     { symptoms: ['indigestion','headache'], disease: 'Migrane' },
-
-=======
->>>>>>> parent of 0c12784 (Merge branch 'main' of https://github.com/Dibyendu-kyo/LifeSync-Hub)
-    
-    
+    { symptoms: ['back pain','leg pain'], disease: 'Spondolities' },
+    { symptoms: ['leg pain'], disease: 'Arthirities' },
+    { symptoms: ['back pain'], disease: 'Spondolities' },
     // Add more symptom-disease mappings as needed
 ];
 

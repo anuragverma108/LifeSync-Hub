@@ -125,3 +125,15 @@ font-size: 26px;
     flex-direction:column;
     justify-content: center;
 }
+
+.btnnn{
+    width: 200px;
+    height: 20px;
+    color: #d9534f;
+    margin-left: 120px;
+}
+
+.btnnnn a{
+     text-decoration: none;
+     color: #fff;
+}
