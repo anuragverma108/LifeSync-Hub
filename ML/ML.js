@@ -18,8 +18,7 @@ const diseaseData = [
     { symptoms: ['itching', 'vomitting'], disease: 'Chronic cholestasis' },
     { symptoms: ['itching'], disease: 'Chronic cholestasis' },
     { symptoms: ['itching', 'skin rash','stomach ache'], disease: 'Drug Reaction' },
-    { symptoms: ['itching','stomach ache'], disease: 'Drug Reaction' },
-    { symptoms: ['skin rash','stomach ache'], disease: 'Drug Reaction' },
+    { symptoms: ['itching', 'skin rash','stomach ache'], disease: 'Drug Reaction' },
     { symptoms: ['vomitting'], disease: 'Peptic Ulcer Disease' },
     { symptoms: ['vomitting','indigestion'], disease: 'Peptic Ulcer Disease' },
     { symptoms: ['indigestion'], disease: 'Peptic Ulcer Disease' },
@@ -63,7 +62,6 @@ const diseaseData = [
     { symptoms: ['back pain','leg pain'], disease: 'Spondolities' },
     { symptoms: ['leg pain'], disease: 'Arthirities' },
     { symptoms: ['back pain'], disease: 'Spondolities' },
-    
     // Add more symptom-disease mappings as needed
 ];
 
@@ -97,7 +95,7 @@ function detectDisease(userSymptoms) {
     }
 
     // Return a default message if no matching disease is found
-    return 'any disease but we currently do not have enough information. Consult a healthcare professional for accurate diagnosis.';
+    return 'Any disease but we currently do not have enough information. Consult a healthcare professional for accurate diagnosis.';
 }
 
 function appendMessage(sender, message) {
