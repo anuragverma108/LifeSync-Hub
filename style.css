@@ -68,3 +68,36 @@
     position: relative;
     left: 45%;
 }
+
+/* ... (your existing styles) ... */
+
+.blog-section {
+    padding: 50px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.blog-section h2,
+.blog-section p {
+    color: #fff;
+}
+
+.blog-section .btn {
+    color: #fff;
+}
+
+/* ... (your existing styles) ... */
+
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #aa390f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
