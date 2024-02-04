@@ -94,9 +94,11 @@ header .nav ul li a:hover::before {
     transition: border-color 0.5s ease, box-shadow 0.5s ease;
 } */
 
+
 .department-box:hover {
-    border-color: blue;
-    box-shadow: 10px 10px 20px rgba(8, 58, 239, 0.3);
+    border: 2px solid #F6450A;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ee701d;
 }
 
 .department-box h2 {
