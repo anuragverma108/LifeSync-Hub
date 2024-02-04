@@ -62,7 +62,7 @@ function detectDisease(userSymptoms) {
     }
 
     // Return a default message if no matching disease is found
-    return 'We currently do not have enough data for now. Consult a healthcare professional for accurate diagnosis.';
+    return 'No specific disease detected. Consult a healthcare professional for accurate diagnosis.';
 }
 
 function appendMessage(sender, message) {
