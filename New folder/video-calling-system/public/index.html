@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Calling System</title>
+</head>
+<body>
+  <div>
+    <label for="userId">Enter your user ID:</label>
+    <input type="text" id="userId" />
+    <button onclick="startCall()">Start Call</button>
+    <button onclick="endCall()">End Call</button>
+  </div>
+  <div>
+    <video id="localVideo" autoplay muted playsinline></video>
+  </div>
+  <div>
+    <h3>Connected Users:</h3>
+    <ul id="userList"></ul>
+  </div>
+  <div>
+    <video id="remoteVideo" autoplay playsinline></video>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/simple-peer"></script>
+  <script src="https://cdn.socket.io/4.1.2/socket.io.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
