@@ -41,6 +41,7 @@ const diseaseData = [
     { symptoms: ['cough','breathlessness'], disease: 'Bronchial Asthma' },
     { symptoms: ['cough','high fever','breathlessness'], disease: 'Bronchial Asthma' },
     { symptoms: ['chest pain','headache'], disease: 'Hypertension' },
+    { symptoms: ['high fever','headache'], disease: 'Common Cold' },
     { symptoms: ['headache'], disease: 'Hypertension' },
     { symptoms: ['vomitting','headache'], disease: 'Stomach Infection' },
     { symptoms: ['vomitting'], disease: 'Stomach Infection' },
@@ -50,7 +51,6 @@ const diseaseData = [
     { symptoms: ['high fever','headache','chest pain'], disease: 'Common Cold' },
     { symptoms: ['cough','high fever'], disease: 'Common Cold' },
     { symptoms: ['headache','chest pain'], disease: 'Common Cold' },
-    { symptoms: ['high fever','headache'], disease: 'Common Cold' },
     { symptoms: ['cough','high fever','headache','sneezing'], disease: 'Common Cold' },
     { symptoms: ['high fever','headache','sneezing'], disease: 'Common Cold' },
     { symptoms: ['cough','headache','sneezing'], disease: 'Common Cold' },
@@ -59,8 +59,9 @@ const diseaseData = [
     { symptoms: ['high fever','sneezing'], disease: 'Common Cold' },
     { symptoms: ['headache','sneezing'], disease: 'Common Cold' },
     { symptoms: ['indigestion','headache'], disease: 'Migrane' },
-
-    
+    { symptoms: ['back pain','leg pain'], disease: 'Spondolities' },
+    { symptoms: ['leg pain'], disease: 'Arthirities' },
+    { symptoms: ['back pain'], disease: 'Spondolities' },
     
     // Add more symptom-disease mappings as needed
 ];
