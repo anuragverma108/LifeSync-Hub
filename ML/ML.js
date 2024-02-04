@@ -18,7 +18,8 @@ const diseaseData = [
     { symptoms: ['itching', 'vomitting'], disease: 'Chronic cholestasis' },
     { symptoms: ['itching'], disease: 'Chronic cholestasis' },
     { symptoms: ['itching', 'skin rash','stomach ache'], disease: 'Drug Reaction' },
-    { symptoms: ['itching', 'skin rash','stomach ache'], disease: 'Drug Reaction' },
+    { symptoms: ['itching','stomach ache'], disease: 'Drug Reaction' },
+    { symptoms: ['skin rash','stomach ache'], disease: 'Drug Reaction' },
     { symptoms: ['vomitting'], disease: 'Peptic Ulcer Disease' },
     { symptoms: ['vomitting','indigestion'], disease: 'Peptic Ulcer Disease' },
     { symptoms: ['indigestion'], disease: 'Peptic Ulcer Disease' },
@@ -27,8 +28,42 @@ const diseaseData = [
     { symptoms: ['weight loss','lethargy'], disease: 'Diabetes' },
     { symptoms: ['weight loss','restlessness'], disease: 'Diabetes' },
     { symptoms: ['restlessness','lethargy'], disease: 'Diabetes' },
-    
-    
+    { symptoms: ['vomitting','sunken eyes','dehydration','diarrhoea'], disease: 'Gastroenteritis' },
+    { symptoms: ['sunken eyes','dehydration','diarrhoea'], disease: 'Gastroenteritis' },
+    { symptoms: ['vomitting','dehydration','diarrhoea'], disease: 'Gastroenteritis' },
+    { symptoms: ['vomitting','sunken eyes','diarrhoea'], disease: 'Gastroenteritis' },
+    { symptoms: ['vomitting','sunken eyes','dehydration'], disease: 'Gastroenteritis' },
+    { symptoms: ['dehydration','diarrhoea'], disease: 'Gastroenteritis' },
+    { symptoms: ['vomitting','diarrhoea'], disease: 'Gastroenteritis' },
+    { symptoms: ['vomitting','sunken eyes'], disease: 'Gastroenteritis' },
+    { symptoms: ['cough','high fever','breathlessness'], disease: 'Bronchial Asthma' },
+    { symptoms: ['high fever','breathlessness'], disease: 'Bronchial Asthma' },
+    { symptoms: ['cough','breathlessness'], disease: 'Bronchial Asthma' },
+    { symptoms: ['cough','high fever','breathlessness'], disease: 'Bronchial Asthma' },
+    { symptoms: ['chest pain','headache'], disease: 'Hypertension' },
+    { symptoms: ['headache'], disease: 'Hypertension' },
+    { symptoms: ['vomitting','headache'], disease: 'Stomach Infection' },
+    { symptoms: ['vomitting'], disease: 'Stomach Infection' },
+    { symptoms: ['high fever','weight loss'], disease: 'Jaundice' },
+    { symptoms: ['cough','high fever','headache','chest pain'], disease: 'Common Cold' },
+    { symptoms: ['cough','high fever','headache'], disease: 'Common Cold' },
+    { symptoms: ['high fever','headache','chest pain'], disease: 'Common Cold' },
+    { symptoms: ['cough','high fever'], disease: 'Common Cold' },
+    { symptoms: ['headache','chest pain'], disease: 'Common Cold' },
+    { symptoms: ['high fever','headache'], disease: 'Common Cold' },
+    { symptoms: ['cough','high fever','headache','sneezing'], disease: 'Common Cold' },
+    { symptoms: ['high fever','headache','sneezing'], disease: 'Common Cold' },
+    { symptoms: ['cough','headache','sneezing'], disease: 'Common Cold' },
+    { symptoms: ['cough','high fever','sneezing'], disease: 'Common Cold' },
+    { symptoms: ['cough','sneezing'], disease: 'Common Cold' },
+    { symptoms: ['high fever','sneezing'], disease: 'Common Cold' },
+    { symptoms: ['headache','sneezing'], disease: 'Common Cold' },
+    {symptoms: ['red eyes','sneezing'], disease: 'Common Cold' },
+    {symptoms: ['itchy eyes','sneezing'], disease: 'Common Cold' },
+    { symptoms: ['indigestion','headache'], disease: 'Migrane' },
+    { symptoms: ['back pain','leg pain'], disease: 'Spondolities' },
+    { symptoms: ['leg pain'], disease: 'Arthirities' },
+    { symptoms: ['back pain'], disease: 'Spondolities' },
     // Add more symptom-disease mappings as needed
 ];
 
@@ -62,7 +97,7 @@ function detectDisease(userSymptoms) {
     }
 
     // Return a default message if no matching disease is found
-    return 'Any disease but we currently do not have enough information. Consult a healthcare professional for accurate diagnosis.';
+    return 'any disease but we currently do not have enough information. Consult a healthcare professional for accurate diagnosis.';
 }
 
 function appendMessage(sender, message) {
