@@ -93,9 +93,10 @@ section {
 }
 
 .blog-image {
-    width: 150px; /* Adjust the width as needed */
+    /* width: 150px; Adjust the width as needed */
     margin-right: 20px;
     border-radius: 8px;
+    size: auto;
 }
 
 .blog-content {
@@ -126,6 +127,9 @@ section {
     margin-left: 480px;
     margin-bottom: 0px;
     padding: 0px;
+}
+.blog-section{
+    margin-top: 0px;
 }
 
 .blog-content h3{
